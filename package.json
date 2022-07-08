@@ -1,0 +1,33 @@
+{
+  "name": "do-vps-test-application",
+  "version": "1.0.0",
+  "description": "A test application to get up and running using a DigitalOcean Droplet, Express, NGINX, &amp; Server Blocks.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JDGuillaume/do-vps-test-application.git"
+  },
+  "keywords": [],
+  "author": "Joey Guillaume",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JDGuillaume/do-vps-test-application/issues"
+  },
+  "homepage": "https://github.com/JDGuillaume/do-vps-test-application#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "uuid": "^8.3.2"
+  }
+}
