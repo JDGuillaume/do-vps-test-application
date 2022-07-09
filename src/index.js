@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import models from './models/index';
 import routes from './routes';
 
+const port = 3000;
 const app = express();
 
 app.use(express.json());
@@ -27,6 +28,6 @@ app.get('/', (req, res) => {
   return res.send(`The server is up and running! We're live!`);
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log(`Example app listening on port 3000!`);
 });
