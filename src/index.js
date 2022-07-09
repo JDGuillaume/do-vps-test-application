@@ -23,6 +23,10 @@ app.use('/session', routes.session);
 app.use('/users', routes.user);
 app.use('/messages', routes.message);
 
+app.get('/', (req, res) => {
+  return res.send(`The server is up and running! We're live!`);
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Example app listening on port ${process.env.PORT}!`);
 });
